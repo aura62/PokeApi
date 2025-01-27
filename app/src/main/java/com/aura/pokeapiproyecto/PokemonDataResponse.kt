@@ -11,5 +11,5 @@ data class PokemonDataResponse(
 
 // Objeto para las imágenes del Pokémon
 data class PokemonSprites(
-    @SerializedName("front_default") val frontDefault: String // URL de la imagen principal
+    @SerializedName("front_default") val url: String // URL de la imagen principal
 )

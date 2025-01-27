@@ -55,4 +55,7 @@ dependencies {
     implementation(libs.retrofit) //antes de hacer las implementaciones hay que ir a libs.version y especificar la version
     implementation(libs.gson.converter)
 
+    //picasso
+    implementation (libs.picasso)
+
 }
