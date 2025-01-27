@@ -7,10 +7,13 @@ import retrofit2.http.Path
 interface ApiService {
 
     // Obtener datos básicos de un Pokémon por su nombre
-    @GET("https://pokeapi.co/api/v2/pokemon/{name}/")
+    @GET("pokemon/{name}")
     suspend fun getPokemon(@Path("name") pokemonName: String): Response<PokemonDataResponse>
 
-    // Obtener detalles de un Pokémon por su ID
-    //@GET("https://pokeapi.co/api/v2/pokemon/{id}/")
-    //suspend fun getPokemonDetails(@Path("id") pokemonId: Int): Response<PokemonDetailResponse>
+    @GET("pokemon-species/{id}")
+    suspend fun getPokemonSpecies(@Path("id") pokemonId: Int) : Response<PokemonSpeciesResponse>
+
+    @GET("evolution-shain/{id}")
+    suspend fun getPokemonEvolutionShain(@Path("id") pkcId : Int) : Response<PokemonEvolutionResponse>
 }
+

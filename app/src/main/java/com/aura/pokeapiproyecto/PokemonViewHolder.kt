@@ -12,7 +12,7 @@ class PokemonViewHolder(view : View) : RecyclerView.ViewHolder(view) {
     fun bind(pokemonItemResponse: PokemonDataResponse){
 
         binding.tvPokemonName.text = pokemonItemResponse.name
-        Picasso.get().load(pokemonItemResponse.sprites.url).into(binding.ivPokemon)
+        Picasso.get().load(pokemonItemResponse.sprites.frontDefault.offArtwork.url).into(binding.ivPokemon)
 
     }
 
