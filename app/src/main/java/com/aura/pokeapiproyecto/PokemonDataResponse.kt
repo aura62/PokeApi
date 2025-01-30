@@ -15,11 +15,12 @@ data class PokemonSprites(
 )
 
 data class PokemonArtwork(
-    @SerializedName("official-artwork") val offArtwork: PokemonFront // URL de la imagen principal
+    @SerializedName("home") val offArtwork: PokemonDefult // URL de la imagen principal
 )
 
-data class PokemonFront(
-    @SerializedName("front_default") val url: String // URL de la imagen principal
+data class PokemonDefult(
+    @SerializedName("front_default") val url: String, // URL de la imagen principal
+    @SerializedName("front_shiny") val urlF: String // URL de la imagen principal
 )
 
 

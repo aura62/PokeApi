@@ -50,7 +50,7 @@ class PokemonListActivity : AppCompatActivity(){
         binding.progressBar.isVisible=true
         CoroutineScope(Dispatchers.IO).launch {
             val myResponse : Response<PokemonDataResponse> =
-                retrofit.create(ApiService::class.java).getPokemon(query.lowercase())
+                retrofit.create(ApiService::class.java).getPokemon(query.uppercase())
             if (myResponse.isSuccessful) {
                 Log.i("Consulta", "Funciona :)")
                 val response: PokemonDataResponse? = myResponse.body()
