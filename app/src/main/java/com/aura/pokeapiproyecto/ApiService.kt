@@ -6,7 +6,7 @@ import retrofit2.http.Path
 
 interface ApiService {
 
-    // Obtener datos básicos de un Pokémon por su nombre
+    //endpoint para obtener datos básicos de un Pokémon por su nombre
     @GET("pokemon/{name}")
     suspend fun getPokemon(@Path("name") pokemonName: String): Response<PokemonDataResponse>
 }

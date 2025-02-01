@@ -73,7 +73,7 @@ class PokemonListActivity : AppCompatActivity(){
     private fun getRetrofit(): Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("https://pokeapi.co/api/v2/") // Base URL without query parameters
+            .baseUrl("https://pokeapi.co/api/v2/") //url base que no requiere de llave
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

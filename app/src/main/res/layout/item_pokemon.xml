@@ -80,26 +80,26 @@
 
 
     </FrameLayout>
-        
-        <FrameLayout
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/tvPokemonName"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="bottom">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/blue_35"
+            android:textColor="@color/black_80"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            tools:text="POKEMON">
 
-            <TextView
-                android:id="@+id/tvPokemonName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@color/blue_35"
-                android:textColor="@color/black_80"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                tools:text="POKEMON">
-
-            </TextView>
+        </TextView>
 
 
-        </FrameLayout>
+    </FrameLayout>
 
-    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
